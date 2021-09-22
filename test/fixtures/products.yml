@@ -1,0 +1,37 @@
+# == Schema Information
+#
+# Table name: products
+#
+#  id            :integer          not null, primary key
+#  p_available   :boolean
+#  p_description :text
+#  p_name        :string
+#  p_price       :float
+#  p_quantify    :integer
+#  p_send        :float
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
+#  user_id       :integer
+#
+# Indexes
+#
+#  index_products_on_user_id  (user_id)
+#
+
+one:
+  p_name: MyString
+  p_description: MyText
+  p_price: 9.99
+  p_quantify: 1
+  p_send: 9.99
+  p_available: false
+  user: one
+
+two:
+  p_name: MyString
+  p_description: MyText
+  p_price: 9.99
+  p_quantify: 1
+  p_send: 9.99
+  p_available: false
+  user: two
